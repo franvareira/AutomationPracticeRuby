@@ -1,0 +1,12 @@
+default: -p pretty -p ambiente -p chrome -p html -p json
+
+pretty: --format pretty
+html: --format html --out=results/report.html
+json: --format json --out=results/report.json
+
+
+ambiente: AMBIENTE=ambiente
+
+com_headless: BROWSER=com_headless
+chrome: BROWSER=chrome 
+firefox: BROWSER=firefox 
